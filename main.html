@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Bharat</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <style>
+        /* css reset (aisa kar dene se kise v chij me margin padding nhi aayega (image v corner me chla jayega))*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            height: 659px;
+            width: 1366px;
+        }
+        /* _______________creating header_________________ */
+        header{
+            position: absolute;
+            top: 0px;
+            /* border is for trial purpose */
+            /* border: 2px solid black; */
+            width: 1362px;
+            height: 65px;
+            color: white;
+        }
+        .main_title{
+            position: absolute;
+            top: 3px;
+            left: 26px;
+        }
+        .main_title a{
+            text-decoration: none;
+            color: white;
+        }
+        h1{
+            display: inline-block;
+            padding: 10px;
+            opacity: 100;
+        }
+        .frist_list{
+            /* border is for trial purpose */
+            /* border: 2px solid red; */       
+            position: absolute;
+            left: 860px;
+            top: 5px;
+        }
+        .item{
+            display: inline-block;
+            padding: 20px;
+        }
+        .item a{
+            text-decoration: none;
+            color: white;
+            /* font-weight: bold; */
+        }
+        .item a:hover, .item a.active{
+            text-decoration: underline;
+            color: #08f9a0;
+        }
+        header::before{
+            background-color: rgb(0, 0, 0);
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 66px;
+            width: 1366px;
+            opacity: 0.2;
+        }
+        /* _______________creating contant_________________ */
+        .content{
+            /* border is for trial purpose */
+            /* border: 2px solid black; */
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 200px;
+            left: 267px;
+        }
+        #para-1{
+            font-size: 40px;
+            padding: 15px;
+        }
+        .paragraph_2{
+            display: inline-block;
+            padding: 0px 12px;
+        }
+        #para-2{
+            font-size: 60px;
+            font-weight: bold;
+        }
+        #para-3{
+            font-size: 60px;
+            font-weight: bold;
+            color: #08f9a0;
+        }
+        #para-4{
+            font-size: 22px;
+            padding: 15px;
+        }
+        /* _______________creating BUTTON_________________ */
+        .button{
+            position: absolute;
+            top: 420px;
+            left: 535px;
+        }
+        #btn-1{
+            padding: 10px 33px;
+            border: 2px solid transparent;
+            border-radius: 7px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        #btn-2{
+            padding: 10px 28px;
+            border: 2px solid transparent;
+            border-radius: 7px;
+            background-color: #08f9a0;
+            color: white;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        #btn-1:hover{
+            background-color: #08f9a0;
+            color: white;
+        }
+        #btn-2:hover{
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="division">
+        <img src="taj11 copy.jpg" alt="image not found">
+    </div>
+    <header>
+        <div class="main_title">
+            <a href="main.html">
+                <h1>MERA</h1>
+                <h1>BHARAT</h1>
+            </a>
+        </div>
+        <div class="manu_item">
+            <ul class="frist_list">
+                <li class="item" id="item1"><a href="#" class="active">HOME</a></li>
+                <li class="item" id="item2"><a href="#">GALLERY</a></li>
+                <li class="item" id="item3"><a href="#">ABOUT</a></li>
+                <li class="item" id="item4"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <p class="paragraph" id="para-1">Welcome To India</p>
+        <p class="paragraph_2" id="para-2">DO COME & VISIT</p>
+        <p class="paragraph_2" id="para-3">MUMBAI</p>
+        <p class="paragraph" id="para-4">"India once is not enough"</p>
+    </div>
+    <div class="button">
+        <button class="btn" id="btn-1">LEARN MORE</button>
+        <button class="btn" id="btn-2">SIGNUP HERE</button>
+    </div>
+</body>
+</html>
